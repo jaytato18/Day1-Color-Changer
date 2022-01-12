@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <style>
+       
+
+    body{
+            margin-top: 50vh;
+            background-color:  beige;
+        }
+
+        .btn-etf{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .btn-etf2{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+
+    <div id="background">
+        <h1 class="btn-etf">Changing Background Color</h1>
+        <button onclick="clickFunction()" class="btn-etf2">Click Me</button>
+    </div>
+
+    <script>
+
+        function clickFunction() {
+
+            let bg = document.getElementById('background',);
+            console.log(bg);
+            let colors = ["#4C0027", "#FFAB76", "#CFFFDC", "#D3DEDC"];
+
+            const colorIndex = parseInt(Math.random() * colors.length);
+            bg.style.backgroundColor = colors[colorIndex];
+        }
+
+    </script>
+</body>
+
+</html>
